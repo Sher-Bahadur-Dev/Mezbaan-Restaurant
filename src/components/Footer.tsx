@@ -8,6 +8,7 @@ import {
   ArrowUp 
 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/restaurantData';
+import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
   onScrollTo: (id: string) => void;
@@ -40,14 +41,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo }) => {
           {/* Column 1: Brand & Bio & Socials */}
           <div className="lg:col-span-4 space-y-6">
             {/* Logo: Orange circular icon + Brand Name */}
-            <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-full bg-[#F26522] flex items-center justify-center text-white shadow-md shadow-[#F26522]/30 flex-shrink-0">
-                <UtensilsCrossed className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-3xl font-serif font-bold tracking-tight text-white">
-                Mezbaan
-              </span>
-            </div>
+            <BrandLogo variant="light" size="lg" showSubtitle={false} />
 
             {/* Subtitle / Bio matching screenshot text */}
             <p className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-sm font-normal">

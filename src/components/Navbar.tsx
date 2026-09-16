@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Phone, MessageCircle, Menu as MenuIcon, X, MapPin, Clock, ShoppingBag } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/restaurantData';
 import { useCart } from '../context/CartContext';
+import { BrandLogo } from './BrandLogo';
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -91,14 +92,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               handleLinkClick('#home');
             }}
             id="brand-logo-link"
-            className="flex flex-col group py-1"
+            className="py-1 focus:outline-none"
+            aria-label="Mezbaan Restaurant Okara Home"
           >
-            <span className="text-2xl sm:text-3xl font-bold tracking-wider text-[#1E1B18] font-logo uppercase group-hover:text-[#C25E26] transition-colors">
-              MEZBAAN
-            </span>
-            <span className="text-[11px] sm:text-xs tracking-widest uppercase text-[#A34816] font-semibold -mt-1">
-              Restaurant • Cakes • Events
-            </span>
+            <BrandLogo variant="dark" size="md" />
           </a>
 
           {/* Desktop Navigation */}
