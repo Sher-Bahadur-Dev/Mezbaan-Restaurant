@@ -14,9 +14,11 @@ import { SocialSection } from './components/SocialSection';
 import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
 import { OwnerDemoBanner } from './components/OwnerDemoBanner';
+import { CartDrawer } from './components/CartDrawer';
+import { CartProvider } from './context/CartContext';
 import { InquiryType } from './types';
 
-export default function App() {
+function MainAppContent() {
   const [selectedInquiryType, setSelectedInquiryType] = useState<InquiryType>('Restaurant Reservation');
 
   const scrollToSection = (sectionId: string) => {
@@ -36,7 +38,7 @@ export default function App() {
       {/* Presentation banner for restaurant management demo */}
       <OwnerDemoBanner />
 
-      {/* Sticky Navbar */}
+      {/* Sticky Navbar with Cart Badge */}
       <Navbar onNavigate={scrollToSection} />
 
       {/* Main Content Sections */}
@@ -53,7 +55,7 @@ export default function App() {
         {/* 3. Why Visit Mezbaan (6 feature cards) */}
         <WhyVisit />
 
-        {/* 4. Menu Section (Desi, Chinese, Continental, Cakes, Event packages with editable placeholders) */}
+        {/* 4. Menu & Online Ordering Section */}
         <MenuSection />
 
         {/* 5. Customized Cakes Section */}
@@ -61,7 +63,7 @@ export default function App() {
 
         {/* 6. Event Lawn Section */}
         <EventLawnSection
-          onPreloadInquiry={({ eventType }) => handleScrollToContactWithType('Event Booking')}
+          onPreloadInquiry={() => handleScrollToContactWithType('Event Booking')}
         />
 
         {/* 7. Responsive Gallery with Lightbox */}
@@ -83,8 +85,19 @@ export default function App() {
       {/* Footer */}
       <Footer onScrollTo={scrollToSection} />
 
-      {/* Floating Call, WhatsApp and Back-To-Top */}
+      {/* Floating Call, WhatsApp, Cart & Back-To-Top */}
       <FloatingActions />
+
+      {/* Slide-Over Cart Drawer & WhatsApp Checkout */}
+      <CartDrawer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <CartProvider>
+      <MainAppContent />
+    </CartProvider>
   );
 }

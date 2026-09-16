@@ -94,9 +94,9 @@ export const ContactFormSection: React.FC<ContactFormSectionProps> = ({
                   <button
                     type="button"
                     onClick={handleWhatsAppDirect}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold shadow-md transition-all"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#0F5132] to-[#146C43] hover:from-[#146C43] hover:to-[#0F5132] text-white text-sm font-semibold shadow-[0_8px_25px_rgba(16,185,129,0.35)] border border-emerald-500/40 transition-all transform hover:-translate-y-0.5 active:scale-95"
                   >
-                    <MessageCircle className="w-4 h-4" />
+                    <MessageCircle className="w-4 h-4 text-emerald-200" />
                     <span>Send this Inquiry to Mezbaan's WhatsApp Now</span>
                   </button>
 
@@ -114,7 +114,7 @@ export const ContactFormSection: React.FC<ContactFormSectionProps> = ({
                         message: '',
                       });
                     }}
-                    className="px-5 py-3 rounded-xl bg-white hover:bg-stone-100 text-[#24211E] text-sm font-medium border border-[#D5C7B2] transition-colors"
+                    className="px-5 py-3.5 rounded-xl bg-white hover:bg-stone-100 text-[#24211E] text-sm font-medium border border-[#D5C7B2] shadow-2xs transition-colors"
                   >
                     Send Another Message
                   </button>
@@ -252,18 +252,18 @@ export const ContactFormSection: React.FC<ContactFormSectionProps> = ({
                   <button
                     type="submit"
                     id="contact-send-inquiry-btn"
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-[#C25E26] hover:bg-[#A34816] text-white text-sm font-semibold shadow-md transition-all transform active:scale-95"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#F26522] to-[#D85316] hover:from-[#D85316] hover:to-[#B8420E] text-white text-sm font-semibold shadow-[0_6px_22px_rgba(242,101,34,0.35)] hover:shadow-[0_8px_28px_rgba(242,101,34,0.45)] transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
                   >
-                    <Send className="w-4 h-4" />
-                    <span>Send Inquiry</span>
+                    <Send className="w-4 h-4 text-amber-100" />
+                    <span>Submit Inquiry</span>
                   </button>
 
                   <button
                     type="button"
                     onClick={handleWhatsAppDirect}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold shadow-sm transition-all"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#0F5132] to-[#146C43] hover:from-[#146C43] hover:to-[#0F5132] text-white text-sm font-semibold shadow-[0_6px_20px_rgba(16,185,129,0.25)] hover:shadow-[0_8px_25px_rgba(16,185,129,0.35)] border border-emerald-500/30 transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
                   >
-                    <MessageCircle className="w-4 h-4" />
+                    <MessageCircle className="w-4 h-4 text-emerald-200" />
                     <span>Send via WhatsApp Directly</span>
                   </button>
                 </div>

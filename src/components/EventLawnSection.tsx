@@ -158,7 +158,7 @@ export const EventLawnSection: React.FC<EventLawnSectionProps> = ({ onPreloadInq
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs font-bold text-emerald-800 bg-emerald-100/70 hover:bg-emerald-100 px-4 py-2.5 rounded-lg border border-emerald-300 transition-colors"
+                  className="inline-flex items-center gap-2 text-xs font-semibold text-emerald-900 bg-emerald-50 hover:bg-emerald-100/90 px-4 py-2.5 rounded-xl border border-emerald-200 transition-colors shadow-2xs"
                 >
                   <MessageCircle className="w-4 h-4 text-emerald-700" />
                   <span>Instant Lawn Booking Inquiry on WhatsApp</span>
@@ -299,18 +299,18 @@ export const EventLawnSection: React.FC<EventLawnSectionProps> = ({ onPreloadInq
                     <button
                       type="submit"
                       id="event-submit-btn"
-                      className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-5 rounded-xl bg-[#C25E26] hover:bg-[#A34816] text-white text-xs sm:text-sm font-semibold shadow-xs transition-colors"
+                      className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-gradient-to-r from-[#C25E26] to-[#A34816] hover:from-[#A34816] hover:to-[#8C360E] text-white text-xs sm:text-sm font-semibold shadow-xs transition-all"
                     >
-                      <Send className="w-3.5 h-3.5" />
+                      <Send className="w-3.5 h-3.5 text-amber-200" />
                       <span>Ask About Event Booking</span>
                     </button>
 
                     <button
                       type="button"
                       onClick={handleWhatsappSend}
-                      className="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold shadow-xs transition-colors"
+                      className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold shadow-xs border border-emerald-600/30 transition-colors"
                     >
-                      <MessageCircle className="w-4 h-4" />
+                      <MessageCircle className="w-4 h-4 text-emerald-300" />
                       <span>Direct WhatsApp</span>
                     </button>
                   </div>

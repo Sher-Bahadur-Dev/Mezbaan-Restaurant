@@ -123,21 +123,21 @@ export const LocationSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 id="location-directions-btn"
-                className="w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-[#C25E26] hover:bg-[#A34816] text-white text-sm font-semibold shadow-xs transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-xl bg-gradient-to-r from-[#F26522] to-[#D85316] hover:from-[#D85316] hover:to-[#B8420E] text-white text-sm font-semibold shadow-[0_6px_20px_rgba(242,101,34,0.35)] hover:shadow-[0_8px_25px_rgba(242,101,34,0.45)] transition-all transform hover:-translate-y-0.5 active:scale-95"
               >
-                <Navigation className="w-4 h-4" />
+                <Navigation className="w-4 h-4 text-amber-100" />
                 <span>Get Directions (Google Maps)</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-75" />
+                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
               </a>
 
               <div className="grid grid-cols-2 gap-3">
                 <a
                   href={BUSINESS_INFO.phoneTel}
                   id="location-call-btn"
-                  className="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-[#24211E] hover:bg-black text-white text-xs sm:text-sm font-semibold transition-colors"
+                  className="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-[#0B131A] hover:bg-black text-white text-xs sm:text-sm font-semibold border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.2)] hover:border-[#F26522]/50 transition-all transform hover:-translate-y-0.5"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#C25E26]" />
-                  <span>Call Now</span>
+                  <Phone className="w-3.5 h-3.5 text-[#F26522]" />
+                  <span>Call Restaurant</span>
                 </a>
 
                 <a
@@ -145,9 +145,9 @@ export const LocationSection: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   id="location-whatsapp-btn"
-                  className="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-semibold transition-colors"
+                  className="inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#0F5132] to-[#146C43] hover:from-[#146C43] hover:to-[#0F5132] text-white text-xs sm:text-sm font-semibold shadow-[0_4px_14px_rgba(16,185,129,0.25)] border border-emerald-500/30 transition-all transform hover:-translate-y-0.5"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-200" />
                   <span>WhatsApp</span>
                 </a>
               </div>
