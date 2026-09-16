@@ -1,0 +1,6 @@
+{
+  "name": "Mezbaan Restaurant Okara",
+  "description": "Mezbaan Restaurant in Okara offering Desi Pakistani, Chinese and Continental cuisine, customized cakes, dine-in, takeaway and event facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
